@@ -1,0 +1,41 @@
+.btn {
+  border: none;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: filter 0.1s ease, transform 0.08s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  background: #505050;
+  color: #ffffff;
+}
+
+.btn:active {
+  filter: brightness(1.3);
+  transform: scale(0.94);
+}
+
+.action {
+  background: #a5a5a5;
+  color: #1c1c1e;
+  font-weight: 500;
+}
+
+.operator {
+  background: #ff9f0a;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.wide {
+  grid-column: span 2;
+  border-radius: 32px;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 24px;
+}
