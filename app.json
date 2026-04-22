@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Voz Migrante",
+    "slug": "voz-migrante",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.vozmigrante.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Necesitamos acceso al microfono para la traduccion en vivo.",
+        "NSCameraUsageDescription": "Necesitamos acceso a la camara para escanear documentos.",
+        "NSPhotoLibraryUsageDescription": "Necesitamos acceso a tus fotos para subir documentos."
+      }
+    },
+    "android": {
+      "package": "com.vozmigrante.app",
+      "permissions": [
+        "RECORD_AUDIO",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      [
+        "expo-image-picker",
+        { "photosPermission": "Necesitamos acceso a tus fotos para subir documentos." }
+      ]
+    ],
+    "scheme": "vozmigrante"
+  }
+}
